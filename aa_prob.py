@@ -1,4 +1,4 @@
-# Aa original --> probabilidad(de qué?)
+# Aa original --> probabilidad
 
 ori = {
     "Ala":0.8,
@@ -23,7 +23,7 @@ ori = {
     "Val":0.68,
 }
 
-# Aa nuevo --> probabilidad(de qué?)
+# Aa nuevo --> probabilidad
 
 nue = {
     "Ala":1,
