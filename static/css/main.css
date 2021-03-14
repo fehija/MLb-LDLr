@@ -1,0 +1,97 @@
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#list {
+    /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";*/
+    font-family: monospace;
+    font-size: 1em;
+}
+
+#list .btn-success {
+    width: 11em;
+    font-size: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+} 
+#list p {
+    margin-left: 2.3em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+#list ul li {
+    list-style-type: none;
+    font-size: 1em;
+    line-height: 1.2em;
+    display: block;
+    margin-right: 0.5em;
+}
+#list ul li:nth-child(1) {
+    display: inline;
+    width: auto;
+    float: left;
+    margin-left: -0.7em;
+}
+h3, h2 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 95%;
+    margin-bottom:0;
+}
+div.result-item {
+    margin-bottom:2em;
+}
+#list .btn-outline-dark {
+    color: #218838;
+    border-color: #1e7e34;
+}
+#list .btn-outline-dark:hover {
+    color: #fff;
+    background-color: #1e7e34;
+}
+.titleDiv {
+    /*border-bottom: 1px #54595e solid;*/
+    border-bottom: 1px #1e7e34 solid;
+    display: flex;
+    margin-bottom:0.4em;
+}
+.titleH2Div {
+    display: flex;
+    margin-bottom:0.4em;
+}
+.titleDiv h3 {
+    width: 85%;
+    padding-bottom: 0;
+}
+.titleH2Div h2 {
+    width: 85%;
+    padding-bottom: 0;
+}
+.titleH2Div button {
+    height: 2.5em;
+    margin-top: 0.4em;
+}
+@media screen and (max-width: 540px) {
+    .titleH2Div button {
+        height: 3.5em;
+    }
+}
+.titleDiv button, .titleH2Div button {
+    width: 15%;
+    margin-bottom:0.3em;
+}
+@media screen and (max-width: 990px) {
+    .titleDiv button, .titleH2Div button {
+        width: 25%;
+    }
+    .titleDiv h3, .titleH2Div h2 {
+        width: 75%;
+    }
+  }

@@ -1,0 +1,49 @@
+ Analyzed mutation: Cys46Gly PATHOGENIC MUTATION ( 76.4 % ).
+ - Affected domain: LBD
+ - Position conservation: High
+ - Size change: Medium
+ - Hydrophobicity change: Medium
+ - Charge change: No
+
+ Analyzed mutation: Gln125Lys Non Pathogenic ( 75.8 % ).
+ - Affected domain: LBD
+ - Position conservation: Medium
+ - Size change: Low
+ - Hydrophobicity change: Low
+ - Charge change: Yes
+
+ Analyzed mutation: Met450Lys PATHOGENIC MUTATION ( 52.7 % ).
+ - Affected domain: B-propeller
+ - Position conservation: Medium
+ - Size change: Low
+ - Hydrophobicity change: High
+ - Charge change: Yes
+
+ Analyzed mutation: Gly565Asn PATHOGENIC MUTATION ( 58.0 % ).
+ - Affected domain: B-propeller
+ - Position conservation: High
+ - Size change: Medium
+ - Hydrophobicity change: Medium
+ - Charge change: No
+
+ Analyzed mutation: Leu187Asp PATHOGENIC MUTATION ( 64.2 % ).
+ - Affected domain: LBD
+ - Position conservation: Medium
+ - Size change: Medium
+ - Hydrophobicity change: High
+ - Charge change: Yes
+
+ Analyzed mutation: Glu288Lys PATHOGENIC MUTATION ( 54.9 % ).
+ - Affected domain: LBD
+ - Position conservation: Medium
+ - Size change: Low
+ - Hydrophobicity change: Low
+ - Charge change: Yes
+
+ Analyzed mutation: Ile355Ala PATHOGENIC MUTATION ( 65.0 % ).
+ - Affected domain: EGF-B
+ - Position conservation: High
+ - Size change: Medium
+ - Hydrophobicity change: Medium
+ - Charge change: No
+

@@ -1,0 +1,1 @@
+ [Aminoacid change(s)] Cys46Gly,Gln125Lys,Met450Lys,Gly565Asn,Leu187Asp,Glu288Lys,Ile355Ala,
