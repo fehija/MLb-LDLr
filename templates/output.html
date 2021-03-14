@@ -1,0 +1,60 @@
+        
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+<!-- <h1>Done !</h1> -->
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-12 offset-0">
+            <div class="card card.body">
+             <p ALIGN=left> LAST QUERY (#{{mutNumber}}):  {{ query }}</p>
+            </div>
+        </div>
+    </div>
+    <hr></hr>
+    <!-- <a class="btn btn-outline-info btn-sm" href="{{ url_for('static', filename='results.txt') }}" role="button">View Results file</a></p>-->
+    <!--<p> Showing results for</p>
+    <iframe src="static/query.txt" height="40" width="95%" title="Iframe Example"></iframe>
+    <FORM><INPUT TYPE="button" onClick="history.go(0)" VALUE="UPDATE Results (Ctrl+Shift+R)"></FORM>
+    <p ALIGN=right><a href="static/results.txt" download="Predictions of LDLr puntual mutation effect.txt">Download</a></p>-->
+        <!-- a href="javascript:history.go(0)">Click to refresh the page</a> -->
+        <!-- <span class="codigo"><a href="static/results.txt">Descargar el archivo</a></span> -->
+    <!--<hr></hr>-->
+    <div id="list">
+        <!--<p><iframe src="static/results.txt" frameborder="0" height="400"
+            width="95%"></iframe></p>-->
+            <h2>Last Query Results:</h2>
+                {% for element in querylist[::-1]: %}
+                <ul id="lastlist">
+                <li>Analyzed mutation: {{ element.analyzed_mutation }}</li>
+                <li>--> PATHOGENIC MUTATION: {{ element.pathogenic_mutation }}</li>
+                <li>- Affected domain: {{ element.affected_domain }}</li>
+                <li>- Position conservation: {{ element.position_conservation }}</li>
+                <li>- Size change: {{ element.size_change }}</li>
+                <li>- Hydrophobicity change: {{ element.hydrophobicity_change }}</li>
+                <li>- Charge change: {{ element.charge_change }}</li>
+                </ul>
+                {% endfor %}
+                <a href="/" class="btn btn-success btn-block">Search again</a>
+    </div>
+    
+</div>
+<script>let queryArray = [];</script>
+{% for element in querylist %}
+<script>
+queryArray.push({
+        'Analyzed mutation':'{{element.analyzed_mutation}}', 
+        '--> PATHOGENIC MUTATION':'{{element.pathogenic_mutation}}',
+        '- Affected domain':'{{ element.affected_domain }}',
+        '- Position conservation':'{{ element.position_conservation }}',
+        '- Size change':'{{ element.size_change }}',
+        '- Hydrophobicity change':'{{ element.hydrophobicity_change }}',
+        '- Charge change':'{{ element.charge_change }}'
+    });  
+</script>
+{% endfor %}
+<script src="static/js/resultview.js"></script>
+{% endblock %}
